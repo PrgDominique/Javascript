@@ -51,3 +51,27 @@
 // const bSuLin = new Boolean("Su Lin");
 // const bArrayProto = new Boolean([]);
 // const bObjProto = new Boolean({});
+
+// Methods
+
+// Boolean.prototype.toString()
+
+// const flag1 = new Boolean(true)
+
+// console.log(flag1.toString())
+// Expected output: "true"
+
+// const flag2 = new Boolean(1)
+
+// console.log(flag2.toString())
+// Expected output: "true"
+
+// Return value
+
+// A string representing the specified boolean value.
+
+// Using toString()
+
+// const flag = new Boolean(true);
+// console.log(flag.toString()); // "true"
+// console.log(false.toString()); // "false"
