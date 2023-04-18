@@ -12,7 +12,7 @@
 //   console.log('boolean conditional resolved to false')
 // }
 
-// Boolean Coercion
+// Boolean Constructor
 
 // Any object, including a Boolean object whose value is false, evaluates to true when passed to a conditional statement. For example, the condition in the following if statement evaluates to true
 
