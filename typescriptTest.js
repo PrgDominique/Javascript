@@ -8,7 +8,12 @@
 //   }
 // }
 // squareDigits(19825)
-var squareDigits = function (num) {
-    return num.toString().split('').map(function (c) { return Math.pow(parseInt(c), 2); }).join('');
+// const squareDigits = (num: number) => {
+//     return num.toString().split('').map(c => parseInt(c) ** 2).join('')
+// }
+// console.log(squareDigits(19825))
+var noRepeatingLetters = function (char) {
+    var res = new Set(char.toLowerCase()).size === char.length;
+    return res;
 };
-console.log(squareDigits(19825));
+console.log(noRepeatingLetters('Dermatoglyphicszd'));

@@ -12,8 +12,15 @@
 
 // squareDigits(19825)
 
-const squareDigits = (num: number) => {
-    return num.toString().split('').map(c => parseInt(c) ** 2).join('')
+// const squareDigits = (num: number) => {
+//     return num.toString().split('').map(c => parseInt(c) ** 2).join('')
+// }
+
+// console.log(squareDigits(19825))
+
+const noRepeatingLetters = (char: string) => {
+  const res = new Set(char.toLowerCase()).size === char.length
+  return res
 }
 
-console.log(squareDigits(19825))
+console.log(noRepeatingLetters('Dermatoglyphicszd'))
