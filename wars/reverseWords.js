@@ -16,17 +16,31 @@
 //   }
 // console.log(reverseWords('This is an example!'))
 // without map
+// const reverseWords = (str: string): string => {
+//   const words = str.split(' ')
+//   let reversedWords: string[] = []
+//   for (let i = 0; i < words.length; i++) {
+//     let reversedWord = ''
+//     console.log('words', words[i])
+//     for (let j = words[i].length - 1; j >= 0; j--) {
+//       // console.log('words[i]: 123', words[j])
+//       // console.log([j])
+//       reversedWord += words[i][j]
+//       // console.log('words[i][j]: 123', words[i][j])
+//     }
+//     reversedWords.push(reversedWord)
+//   }
+//   return reversedWords.join(' ')
+// }
+// console.log(reverseWords('This is an example!'))
 var reverseWords = function (str) {
     var words = str.split(' ');
-    var reversedWords = [];
+    // let reversedWords: string[] = []
     for (var i = 0; i < words.length; i++) {
-        var reversedWord = '';
-        for (var j = words[i].length - 1; j >= 0; j--) {
-            console.log(words[i][j]);
-            reversedWord += words[i][j];
+        if (words[i].length < words.length) {
+            var reversedWord = '';
+            console.log('words', words[i]);
         }
-        reversedWords.push(reversedWord);
     }
-    return reversedWords.join(' ');
 };
-console.log(reverseWords("This is an example!"));
+console.log(reverseWords("Let's travel abroad shall we"));
