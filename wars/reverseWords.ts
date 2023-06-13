@@ -24,42 +24,26 @@
 
 // without map
 
-// const reverseWords = (str: string): string => {
-//   const words = str.split(' ')
-
-//   let reversedWords: string[] = []
-//   for (let i = 0; i < words.length; i++) {
-//     let reversedWord = ''
-//     console.log('words', words[i])
-//     for (let j = words[i].length - 1; j >= 0; j--) {
-//       // console.log('words[i]: 123', words[j])
-//       // console.log([j])
-//       reversedWord += words[i][j]
-//       // console.log('words[i][j]: 123', words[i][j])
-//     }
-//     reversedWords.push(reversedWord)
-//   }
-
-//   return reversedWords.join(' ')
-// }
-
-// console.log(reverseWords('This is an example!'))
-
-
-
-const reverseWords = (str: string) => {
+const reverseWords = (str: string): string => {
   const words = str.split(' ')
 
-  // let reversedWords: string[] = []
-
+  let reversedWords: string[] = []
   for (let i = 0; i < words.length; i++) {
-    if (words[i].length < words.length){
-
-      let reversedWord = ''
-      console.log('words', words[i])
+    let reversedWord = ''
+    console.log('words', words[i])
+    for (let j = words[i].length - 1; j >= 0; j--) {
+      // console.log('words[i]: 123', words[j])
+      // console.log([j])
+      reversedWord += words[i][j]
+      // console.log('words[i][j]: 123', words[i][j])
     }
-
+    reversedWords.push(reversedWord)
   }
+
+  return reversedWords.join(' ')
 }
 
-console.log(reverseWords("Let's travel abroad shall we"))
+console.log(reverseWords('This is an example!'))
+
+
+
