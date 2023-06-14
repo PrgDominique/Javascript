@@ -8,13 +8,14 @@
 // a = "abcdefghijklmnopqrstuvwxyz"
 // longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
+
+
 const take2StringSorted = (s1: string, s2: string) => {
   const char = s1 + s2
-//   const res = new Set(char.toLowerCase()).size === char.length
-//   return res
+  //   const res = new Set(char.toLowerCase()).size === char.length
+  //   return res
 
-
-return Array.from(new Set(char)).sort().join('')  
+  return Array.from(new Set(char)).sort().join('')
 }
 
 console.log(take2StringSorted('aretheyhere', 'yestheyarehere'))

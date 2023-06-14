@@ -60,4 +60,7 @@
 
 // console.log(getLastArray([1, 2, 3, 7, 10, 14, 20, 6]))
 
-
+const testSample = (str) => {
+    return str[4]
+}
+console.log(testSample('hello'));
