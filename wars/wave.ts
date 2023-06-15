@@ -3,7 +3,7 @@
 
 // The result is a wave of standing spectators that travels through the crowd, even though individual spectators never move away from their seats. In many large arenas the crowd is seated in a contiguous circuit all the way around the sport field, and so the wave is able to travel continuously around the arena; in discontiguous seating arrangements, the wave can instead reflect back and forth through the crowd. When the gap in seating is narrow, the wave can sometimes pass through it. Usually only one wave crest will be present at any given time in an arena, although simultaneous, counter-rotating waves have been produced. (Source Wikipedia)
 // Task
-// In this simple Kata your task is to create a function that turns a string into a Mexican Wave. You will be passed a string and you must return that string in an array where an uppercase letter is a person standing up. 
+// In this simple Kata your task is to create a function that turns a string into a Mexican Wave. You will be passed a string and you must return that string in an array where an uppercase letter is a person standing up.
 // Rules
 //  1.  The input string will always be lower case but maybe empty.
 
@@ -13,11 +13,17 @@
 // Good luck and enjoy!
 
 const wave = (str: string) => {
-    const word = str.split('')
+  const word = str.split('')
 
-    for (let i = 0; i < word.length; i++){
-        console.log('w',word[i])
+  const result: string[] = []
+  for (let i = 0; i < word.length; i++) {
+    if (str[i] === ' ') {
+      continue
     }
+    const waveStr = str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1)
+    result.push(waveStr)
+  }
+  return result
 }
 
-console.log(wave('hello'));
+console.log(wave('hello'))
