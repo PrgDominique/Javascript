@@ -18,9 +18,20 @@
 
 // console.log(squareDigits(19825))
 
-const noRepeatingLetters = (char: string) => {
-  const res = new Set(char.toLowerCase()).size === char.length
-  return res
+// const noRepeatingLetters = (char: string) => {
+//   const res = new Set(char.toLowerCase()).size === char.length
+//   return res
+// }
+
+// console.log(noRepeatingLetters('Dermatoglyphicszd'))
+
+const numbers = [65, 44, 12, 4]
+// numbers.forEach(myFunction)
+const modifiedNumbers = numbers.map(myFunction)
+
+function myFunction (item: number): number {
+  // arr[index] = item* 10
+  return item * 10
 }
 
-console.log(noRepeatingLetters('Dermatoglyphicszd'))
+console.log(modifiedNumbers)

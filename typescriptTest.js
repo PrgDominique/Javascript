@@ -12,8 +12,16 @@
 //     return num.toString().split('').map(c => parseInt(c) ** 2).join('')
 // }
 // console.log(squareDigits(19825))
-var noRepeatingLetters = function (char) {
-    var res = new Set(char.toLowerCase()).size === char.length;
-    return res;
-};
-console.log(noRepeatingLetters('Dermatoglyphicszd'));
+// const noRepeatingLetters = (char: string) => {
+//   const res = new Set(char.toLowerCase()).size === char.length
+//   return res
+// }
+// console.log(noRepeatingLetters('Dermatoglyphicszd'))
+var numbers = [65, 44, 12, 4];
+// numbers.forEach(myFunction)
+var modifiedNumbers = numbers.map(myFunction);
+function myFunction(item) {
+    // arr[index] = item* 10
+    return item * 10;
+}
+console.log(modifiedNumbers);
